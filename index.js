@@ -18,7 +18,7 @@ app.get('/api/user', (req, res) => {
 
 // if( process.env.API_PORT){
 
-    app.listen( process.env.API_PORT, console.log(`POD Backend App is running on port ${process.env.API_PORT}`))
+    app.listen( process.env.API_PORT, () => console.log(`POD Backend App is running on port ${process.env.API_PORT}`))
 // }
 
 // git remote add origin https://github.com/Mahesh-Dev23/podback24.git
