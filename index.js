@@ -1,6 +1,6 @@
-import express from 'express'
-import cors from 'cors'
-import dotEnv from 'dotEnv'
+const express = require('express') 
+const cors = require('cors')
+const dotEnv = require('dotEnv') 
 
 dotEnv.config()
 
