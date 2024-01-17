@@ -1,5 +1,7 @@
 const express = require('express')
 const cors = require('cors')
+const dotenv = require('dotenv').config()
+const connectDB = require('./config/db')
 const app = express()
 
 
@@ -12,4 +14,6 @@ app.get('/api/users', (req, res) => {
     res.json({body: `Welcome ${Date.now()}`})
 })
 
-app.listen(5000, console.log(`The app is running.`))
+connectDB()
+
+app.listen(8000, console.log(`The app is running.`))
